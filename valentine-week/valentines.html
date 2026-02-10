@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Happy Valentine’s Day ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card" id="loginBox">
+      <h2>Enter Secret Code ❤️</h2>
+      <input type="password" id="password" placeholder="Enter password" />
+      <br /><br />
+      <button onclick="checkPassword()">Open My Heart 💖</button>
+    </div>
+
+    <div class="card" id="valentineContent" style="display: none">
+      <h1>Happy Valentine’s Day ❤️</h1>
+      <p>You are my forever and always 💕</p>
+      <h2>I Love You So Much 😘</h2>
+    </div>
+
+    <script>
+      function checkPassword() {
+        const password = document.getElementById("password").value;
+
+        if (password === "iloveyou") {
+          // Change password here
+          document.getElementById("loginBox").style.display = "none";
+          document.getElementById("valentineContent").style.display = "block";
+        } else {
+          alert("Wrong Password 😜");
+        }
+      }
+    </script>
+  </body>
+</html>

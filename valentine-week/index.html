@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Valentine’s Week For Harsha ❤️</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div class="hearts-container"></div>
+  <body>
+    <h1 class="title">Valentine’s Week For Harsha ❤️</h1>
+
+    <!-- Music Button -->
+    <div class="music-btn" onclick="playMusic()">🎵 Play Music</div>
+    <audio id="bgMusic" loop>
+      <source src="music.mpeg" type="audio/mpeg" />
+    </audio>
+
+    <!-- Days -->
+    <div class="days-container">
+      <div class="day-card" onclick="showPopup(0)">🌹 Rose Day</div>
+      <div class="day-card" onclick="showPopup(1)">💍 Propose Day</div>
+      <div class="day-card" onclick="showPopup(2)">🍫 Chocolate Day</div>
+      <div class="day-card" onclick="showPopup(3)">🧸 Teddy Day</div>
+      <div class="day-card" onclick="showPopup(4)">🤝 Promise Day</div>
+      <div class="day-card" onclick="showPopup(5)">🤗 Hug Day</div>
+      <div class="day-card" onclick="showPopup(6)">😘 Kiss Day</div>
+      <div class="day-card" onclick="showPopup(7)">❤️ Valentine’s Day</div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close" onclick="closePopup()">✖</span>
+        <h2 id="popupTitle"></h2>
+        <p id="popupMessage"></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>Forever yours, Annu ❤️</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
